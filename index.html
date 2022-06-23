@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCLS_FND_Janken_Luky</title>
+</head>
+<body>
+    <center>
+        <h1>JANKEN</h1>
+        <img src="./gunting.png" width="100px;">
+        <img src="./batu.png" width="100px;">
+        <img src="./kertas.png" width="100px;"><br><br>
+        <button type="button" onclick="game('gunting')">Gunting</button>
+        <button type="button" onclick="game('batu')">Batu</button>
+        <button type="button" onclick="game('kertas')">Kertas</button><br>
+        <h3>PLAYER</h3><br>
+        <img id="img-player" width="100px"><br><br>
+        <img src="./versus.png" width="100px"><br>
+        <h3>PC</h3><br>
+        <img id="img-pc" width="100px"><br>
+        <h3 id="game-status"></h3><br>
+        <h3 id="game-result">RESULT
+            <br>
+            <br>WIN: 0
+            <br>LOSE: 0
+            <br>DRAW: 0
+            <br><br>SCORE: 0
+        </h3>
+
+    </center>
+    
+</body>
+<script src="./script.js"></script>
+</html>
