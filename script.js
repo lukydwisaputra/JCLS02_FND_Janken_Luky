@@ -33,11 +33,8 @@ const game = (choice) => {
 }
 
 const shuffleImage = (pcChoice) => {
-    for (let i = 1; i < 3000; i++) {
-        setTimeout(() => { kertas() }, 125);
-        setTimeout(() => { gunting() }, 125);
-        setTimeout(() => { batu() }, 125);
-    }
+    randomImage();
+    setTimeout(() => { randomImage() }, 350);
     
     setTimeout(() => { document.getElementById("img-pc").src = `./${pcChoice}.png`; }, 1000);
     setTimeout(() => { document.getElementById("game-result").innerHTML = `
@@ -56,5 +53,11 @@ const gunting = () => {
 }
 const batu = () => {
     document.getElementById("img-pc").src = `./batu.png`;
+}
+
+const randomImage = () => {
+    setTimeout(() => { kertas() }, 150);
+    setTimeout(() => { gunting() }, 250);
+    setTimeout(() => { batu() }, 350);
 }
 
